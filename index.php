@@ -38,7 +38,8 @@ $double_name = [];
 $continent = [];
 $first_world = [];
 $second_word = [];
-echo '<h1>Массив животных через запятую</h1>';
+echo '<h1>Домашнее задание к лекции "Строки, массивы и объекты"</h1><br>';
+echo '<h2>1. Дополнительное задание:</h2><br>';
 foreach ($animals_continents as $continents_key => $animals) {
     $continent[] = $continents_key;
     echo "<h2>$continents_key</h2>";
@@ -53,13 +54,13 @@ foreach ($animals_continents as $continents_key => $animals) {
     }
 }
 echo '<hr>';
-echo '<h2>Массив из двух слов</h2>';
+echo '<h2>2. Названия, состоящие из двух слов:</h2><br>';
 foreach ($double_name as $item) {
-    echo "<p>$item</p> <br>";
+    echo "<p>$item</p>";
 }
 echo '<hr>';
 shuffle($second_word);
-echo '<h1>Выдуманные животные</h1>';
+echo '<h2>3. "Фантазийные" названия:</h2><br>';
 foreach ($second_word as $last) {
     $first = array_shift($first_world);
     echo "<p>$first $last</p>";
